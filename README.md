@@ -67,8 +67,6 @@ Assets/
 │   ├── PlayerController.cs # Agent observations, actions, and reward signals
 │   ├── ProceduralAudio.cs  # Synthesized 8-bit PCM audio clips
 │   └── ScoreManager.cs     # Rich-text persistent match scoreboard
-└── Training/
-    └── config.yaml     # PPO self-play hyperparameters
 ```
 
 ---
@@ -94,7 +92,7 @@ Assets/
 
 ## Running Inference (Testing the Model)
 
-1. Open `Assets/Scenes/Arena.unity`.
+1. Open `Assets/Scenes/FinalBattle.unity`.
 2. Locate the `Player` instances in the scene hierarchy.
 3. In the Inspector under **Behavior Parameters**:
    * Set **Model** to the trained `.onnx` file located in `Assets/Models/`.
@@ -111,7 +109,7 @@ Assets/
 To train the policy from scratch using parallel environments:
 
 ```bash
-mlagents-learn config/trainer_config.yaml --run-id=Ricochet_Run01 --num-envs=16
+mlagents-learn config/trainer_config.yaml --run-id=Ricochet_Run01
 ```
 
 Press **Play** in Unity when prompted by the terminal.
