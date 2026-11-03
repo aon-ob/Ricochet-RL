@@ -6,6 +6,7 @@ Trained for ~50 million steps across 16 parallel arenas using self-play.
 
 ---
 
+
 ## Overview
 
 Unlike standard grid-world or projectile environments, **Ricochet-RL** couples physics-driven locomotion with continuous, physics-simulated ordnance:
@@ -14,6 +15,8 @@ Unlike standard grid-world or projectile environments, **Ricochet-RL** couples p
 - **Zero Heavy Assets:** All sound effects (explosions, bonks, throws) are procedurally generated via raw PCM buffers at runtime, paired with procedural dynamic lighting and bloom.
 
 ---
+
+https://github.com/user-attachments/assets/cc7e37fc-5f1e-43d7-8403-27ffabb812a2
 
 ## Core Mechanics
 
